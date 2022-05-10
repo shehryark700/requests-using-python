@@ -1,0 +1,18 @@
+import requests
+class Restapi:
+    """
+    These are Data Memebers
+    """
+    endpoint = " "
+
+    def __init__(self, e):
+        self.endpoint = e
+    def readendpoint(self):
+        self.endpoint = input("please enter valid url:")
+    def showdata(self):
+        print(self.endpoint)
+## closing class
+obj1 = Restapi("hello")
+obj1.showdata()
+obj1.readendpoint()
+obj1.showdata()
